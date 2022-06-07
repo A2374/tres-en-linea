@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, .6); */
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b{
+    /* background-color: #f2f2f2; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 25px 30px;
+}
+
+.b__label{
+    color: #6d6d6d;
+}
+
+.b__inputName{
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid #dadada;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#b__btnPlay{
+    background-color: #256EFF;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f2f2f2;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+#b__btnPlay:hover{
+    border: 1px solid#256EFF;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.center-content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 45px 0;
+}
+
+.blockTie{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: #292c2a;
+    color: #f2f2f2;
+}
+
+.blockTurn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: #ef476f;
+    color: #f2f2f2;
+}
+
+.blockWinner{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: #f77b34;
+    color: #f2f2f2;
+}
+
+.blockTurn__playerName{
+    text-decoration: underline;
+}
+
+.board{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    border-radius: 20px;
+    background-color: #FBFBFB;
+    box-shadow: 0 0 10px 4px #EDEDED;
+    padding: 20px;
+}
+
+.board__boxes{
+    width: 100px;
+    height: 100px;
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board__boxes:hover{
+    cursor: pointer;
+    background-color: #E5E5E5;
+}
+
+.board__boxes > span{
+    font-size: 38px;
+}
+
+.players{
+    margin: 40px 0;
+}
+
+.players > div{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.players > div > span{
+    font-size: 22px;
+}
+
+.players--left{
+    background-color: #256EFF;
+}
+
+.players--right{
+    background-color: #3DDC97;
+}
